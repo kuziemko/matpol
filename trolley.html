@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	  <meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-2">
+	  <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
+	  <meta name="viewport" content="width=device-width" content="initial-scale=1">
+	  <link rel="stylesheet" href="style.css" type="text/css"/>
+	   <title>mat-pol</title>
+	<!--bottstrap-->
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+	<script src="../_js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	function hamburger_up_down(x) {
+    	x.classList.toggle("change");
+	};
+	
+	$(document).ready(function(){
+		$('.hamburger').click(function(){
+			$('.nawigacja').toggle('fast');
+			hamburger_up_down(this);
+		});
+		$('#trolley a').css("color","#fff");
+			
+	});//koniec ready
+	</script>
+
+</head>
+</body>
+<div id="header">
+	<div class="container">
+		<div class="row">
+			<a href="index.html"><img src="images/logo.png" class="img-responsive" id="logo1" ></a>
+
+				 <div class="hamburger">
+	 				 <div class="bar1"></div>
+	  				 <div class="bar2"></div>
+					 <div class="bar3"></div>
+				</div> 
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo">
+					<nav id="stepone" class="nawigacja">
+						<ul>
+							<li><a  href="#" >blog</a></li>
+							<li id="trolley" class="active_link2"><a  href="#" >my trolley <img src="images/koszyk.png"></a></li>
+						</ul>	
+					</nav>	
+				</div>
+		</div><!--row-->	
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo">
+				<nav id="steptwo" class="nawigacja">
+					<ul>
+						<li><a  href="aboutus.html" >about us</a></li>
+						<li><a  href="plates.html" >number plate buy now</a></li>
+						<li><a  href="#" >frames</a></li>
+						<li><a  href="#" >faq</a></li>
+						<li><a  href="#" >contact</a></li>
+					</ul>
+				</nav>	
+			</div>	<!--classlog12-->	
+		</div><!--row-->	
+	</div><!--container-->
+</div><!--headerr-->
+
+<div id="trolley_content">
+	<div class="container">
+		<img class="img-responsive" src="images/cien.png" id="cien">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tableover no-padding-left">
+						<table >
+							<tr>
+								<th><h2>product</h2></th>
+								<th><h2>description</h2></th>
+								<th><h2>price</h2></th>
+							</tr>
+							<tr>
+								<td><button id="trolleyx"><img src="images/znakx.png"></button><img src="images/product_popup.png"></td>
+								<td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam odio justo, id gravida lorem suscipit sit amet. Duis vitae risus in erat tempus viverra sit amet non lorem. .</p><span>Your registration number: RBAI 61E</span></td>
+								<td><h5>28.95</h5></td>
+							</tr>
+							<tr>
+								<td><button id="trolleyx"><img src="images/znakx.png"></button><img src="images/product2_popup.png"></td>
+								<td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam odio justo, id gravida lorem suscipit sit amet.</p></td>
+								<td><h5>3</h5></td>
+							</tr>
+							</table>
+
+							<table class="table_pay">
+							<th colspan="2">
+								<h4>Total to pay:</h4>
+								<td><h5>31.25</h5>
+								<span>(VAT inclusive)</span></td>
+							</th>
+							</table>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-left">
+						<div class="delivery_type">
+						<input type="radio" name="dt">
+						<label><img src="images/standard_delivery.png"></label>
+						</div>
+						<div class="delivery_type">
+						<input type="radio" name="dt">
+						<label><img src="images/next_day_delivery.png"></label>
+						</div>
+						</div>
+					</div><!--classlog6 lewa platnosci-->
+
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div id="delivery">
+							<h1>Delivery details:</h1>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left">
+								<input type="text" name="name" size="36">
+								<label>Full Name</label>
+							</div>
+
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left">
+								<input type="text" name="adress" size="36">
+								<label>Adress</label>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left margin_delivery">
+								<input type="text" name="adress" size="36">
+								<label></label>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left">
+								<input type="text" name="post_code" size="36">
+								<label>Post Code</label>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left">
+								<input type="text" name="town" size="36">
+								<label>Town/City</label>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left">
+								<input type="text" name="phone" size="36">
+								<label>Phone</label>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left">
+								<input type="text" name="emial" size="36">
+								<label>Email</label>
+							</div>
+						</div><!--delivery-->
+					</div><!--classlog5 prawa adress-->
+				</div><!--classlog12-->
+			</div><!--row-->	
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div id="payment">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding-left">
+					<div class="delivery_type">
+						<input type="checkbox" name="offers">
+						<label>Yes, I want to recive offers and information about products and services from mat-pol.</label>
+						</div>
+
+						<div class="delivery_type">
+						<input type="checkbox" name="accept_terms">
+						<label>I confirm that I have read and accept your <span>terms and conditions</span></label>
+						</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding-right no-padding-left">
+							<a href="#"><img src="images/pay_by_card.png"></a><a href="#"><img src="images/visa.png"></a> <a href="#"><img src="images/maestro.png"></a><a href="#"><img src="images/mastercard.png"></a><a href="#"><img src="images/pay_with_pay_pal.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div><!--container-->
+</div><!--content-->
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">	
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				<div id="footer_contact">
+					<span><img src="images/poczta.png" /><p>sales@mat-pol.com.uk</p></span>
+					<span><img src="images/telefon.png" /><p>0201 264 351</p></span>
+				</div>
+			</div><!--classlog12-->
+		</div><!--row-->
+		<div class="row">	
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				<div id="footer_news">
+					<form>
+						<input type="email" placeholder="Sing up for your emial newsletter">
+						<button>sign up</button>
+					</form>
+				</div><!--footer news-->
+			</div><!--classlog12-->
+		</div><!--row-->	
+	</div><!--container-->
+</footer>
+
+<div id="monopixel">
+	<div class="container">	
+		<div class="row">
+			<img src="images/mono.png" />
+		</div>
+	</div><!--container-->
+</div><!--monopixel-->
+</body>
+</html>
+
