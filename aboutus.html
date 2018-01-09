@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	  <meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-2">
+	  <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
+	  <meta name="viewport" content="width=device-width" content="initial-scale=1">
+	  <link rel="stylesheet" href="style.css" type="text/css"/>
+	   <title>mat-pol</title>
+	<!--bottstrap-->
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+	<script src="../_js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	function hamburger_up_down(x) {
+    	x.classList.toggle("change");
+	};
+
+	$(document).ready(function(){
+
+		$('.hamburger').click(function(){
+			$('.nawigacja').toggle('fast');
+			hamburger_up_down(this);
+		});
+
+	$('#trolley').hover(
+		function(){
+			$('#trolley img').attr('src','images/koszyk.png');
+		},
+		function(){
+			$('#trolley img').attr('src','images/koszyk1.png');
+		});//koniec hover trolley
+
+	var i =0;
+	var b =$('.prawaopinia').length;
+	function opinie(){	
+		$('.prawaopinia').hide();
+		$('.prawaopinia').eq(i).show();
+		$('.prawaopinia').eq(i+1).show();
+		$('.prawaopinia').eq(i+2).show();}
+		opinie();
+					
+	$('#opinie_przod').click(function(){
+		if(i==b-2|| i+1==b-2||i+2==b-2){
+			opinie();
+		}
+		else{
+			i=i+3;
+			opinie();}
+	});
+
+	$('#opinie_tyl').click(function(){
+		if(i==0|| i+1==0||i+2==0){
+			opinie();
+		}
+		else{
+			i=i-3;
+			opinie();}
+		});
+	$('.nawigacja, a:eq(3)').css("color","white");
+	});//koniec ready
+
+</script>
+</head>
+</body>
+<div id="header">
+	<div class="container">
+		<div class="row">
+			<a href="index.html"><img src="images/logo.png" class="img-responsive" id="logo1" ></a>
+
+				<div class="hamburger">
+ 				 <div class="bar1"></div>
+  				 <div class="bar2"></div>
+				 <div class="bar3"></div>
+			</div> 
+			
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo">
+					<nav id="stepone" class="nawigacja">
+						<ul>
+							<li><a  href="#" >blog</a></li>
+							<li id="trolley"><a  href="trolley.html" >my trolley <img src="images/koszyk1.png"></a></li>
+						</ul>	
+					</nav>	
+				</div>
+		</div><!--row-->	
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo">
+				<nav id="steptwo" class="nawigacja">
+					<ul>
+						<li class="active_link"><a  href="#" >about us</a></li>
+						<li><a  href="plates.html" >number plate buy now</a></li>
+						<li><a  href="#" >frames</a></li>
+						<li><a  href="#" >faq</a></li>
+						<li><a  href="#" >contact</a></li>
+					</ul>	
+				</nav>	
+			</div>	<!--classlog12-->	
+		</div><!--row-->	
+	</div><!--container-->
+</div><!--headerr-->
+
+<div id="content">
+	<div class="container">
+		<img class="img-responsive" src="images/cien.png" id="cien">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<div id="about_content_left">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam odio justo, id gravida lorem suscipit sit amet. Duis vitae risus in erat tempus viverra sit amet non lorem. Duis consectetur congue tortor, vel suscipit felis vulputate sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum blandit justo nec augue lobortis hendrerit.<img class="img-responsive" src="images/foto1.jpg" /> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus eu nibh libero. Quisque aliquet commodo ante efficitur finibus. Aliquam elementum feugiat quam ut bibendum. Sed porttitor orci eget quam tristique, quis sollicitudin sapien cursus. Cras urna turpis, aliquet non mattis eu, malesuada nec neque. Curabitur non lectus ut nisl laoreet feugiat. </p><p>Mauris libero purus, pellentesque vel tincidunt sed, tempus sit amet magna. Aliquam sit amet elit felis. Integer ornare massa sed elementum ornare. Duis libero enim, auctor ut dictum quis, cursus non leo. Morbi imperdiet maximus enim sed imperdiet. Aenean tincidunt neque a ligula commodo pulvinar. Etiam dapibus orci quis quam finibus aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed a nulla ac nunc gravida venenatis at sed augue. Sed hendrerit lacus nec sapien fermentum, lobortis tristique ex molestie. Sed vitae luctus lorem, at bibendum urna. </p>
+									<p>Ut blandit aliquet maximus. Nunc eget ullamcorper odio, ornare vestibulum lorem. In accumsan nulla et est tincidunt consectetur. Morbi elementum lorem vitae nisl sodales, eget porta dui vehicula. Praesent sit amet massa lig</p>
+					</div>	
+				</div><!--classlog18-->
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">	
+					<div id="about_content_right">
+							<div id="feedback">
+							<h3>our feedback</h3>
+							</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="prawaopinia">	
+								<p>Ut blandit aliquet maximus. Nunc eget ullamcorper odio, ornare vestibulum lorem. In accumsan nulla et est tincidunt consectetur. </p>
+								<span>John Doe</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div  class="prawaopinia">
+								<p>Aliquam elementum feugiat quam ut bibendum. Sed porttitor orci eget quam tristique, quis sollicitudin sapien cursus. Cras urna turpis, aliquet non mattis eu, malesuada nec neque.</p>	
+								<span>Alan Anders</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div  class="prawaopinia">
+								<p>Vestibulum blandit justo nec augue lobortis hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus eu nibh libero.</p>	
+								<span>Henry Cole</span>
+							</div>
+						</div><!--classlog12-->
+						
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="prawaopinia">	
+								<p>Quisque aliquet commodo ante efficitur finibus. Aliquam elementum feugiat quam ut bibendum. Sed porttitor orci eget quam tristique, quis sollicitudin sapien cursus. C </p>
+								<span>Frank Rositsky</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div  class="prawaopinia">
+								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>	
+								<span>Tomy Spark</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div  class="prawaopinia">
+								<p>Ut blandit aliquet maximus. Nunc eget ullamcorper odio, ornare vestibulum lorem. In accumsan nulla et est tincidunt consectetur.</p>	
+								<span>Sussan Brick</span>
+							</div>
+						</div><!--classlog12-->
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="prawaopinia">	
+								<p>Ut blandit aliquet maximus. Nunc eget ullamcorper odio, ornare vestibulum lorem. In accumsan nulla et est tincidunt consectetur. </p>
+								<span>Kathrine Lost</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div  class="prawaopinia">
+								<p>Aliquam elementum feugiat quam ut bibendum. Sed porttitor orci eget quam tristique, quis sollicitudin sapien cursus. Cras urna turpis, aliquet non mattis eu, malesuada nec neque.</p>	
+								<span>Hulio</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="prawaopinia">	
+								<p>Ut blandit aliquet maximus. Nunc eget ullamcorper odio, ornare vestibulum lorem. In accumsan nulla et est tincidunt consectetur.</p>
+								<span>sekatore</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="prawaopinia">	
+								<p>Ut blandit aliquet maximus. Nunc eget ullamcorper odio, ornare vestibulum lorem. In accumsan nulla et est tincidunt consectetur.</p>
+								<span>ursus Quo</span>
+							</div>
+						</div>	<!--classlog12-->
+						<div id="about_nawigacja">
+							<button id="opinie_tyl" ><img src="images/strzalka_lewa.png"></button>
+							<button id="opinie_przod"><img src="images/strzalka_prawa.png"></button>
+						</div>
+					</div>	
+				</div><!--classlog4-->
+			</div><!--row-->
+	</div><!--container-->
+</div><!--content-->
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">	
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				<div id="footer_contact">
+					<span><img src="images/poczta.png" /><p>sales@mat-pol.com.uk</p></span>
+					<span><img src="images/telefon.png" /><p>0201 264 351</p></span>
+				</div>
+			</div><!--classlog12-->
+		</div><!--row-->
+		<div class="row">	
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				<div id="footer_news">
+					<form>
+						<input type="email" placeholder="Sing up for your emial newsletter">
+						<button>sign up</button>
+					</form>
+				</div><!--footer news-->
+			</div><!--classlog12-->
+		</div><!--row-->	
+	</div><!--container-->
+</footer>
+
+<div id="monopixel">
+	<div class="container">	
+		<div class="row">
+			<img src="images/mono.png" />
+		</div>
+	</div><!--container-->
+</div><!--monopixel-->
+</body>
+</html>
+
